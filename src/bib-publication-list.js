@@ -394,7 +394,7 @@ var bibtexify = (function($) {
             }
             str += itemStr;
 
-            return str + '<div class="yearlabel">' + item.year + '</div></div>';
+            return str + '<div class="yearlabel">' + item.year + ' (' + item.count + ')' + '</div></div>';
         };
         var statsHtml = '<style>' + styleStr + '</style>';
         yearstats.forEach(function(item) {
